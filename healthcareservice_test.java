@@ -6,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class healthcareservice_test {
     public static void main(String[] args) {
-
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
@@ -71,6 +70,5 @@ public class healthcareservice_test {
         boolean login_button = driver.findElement(By.cssSelector("#sidebar-wrapper > ul > li:nth-child(4) > a"))
                 .isDisplayed();
         Assert.assertEquals(true, login_button);
-
     }
 }
