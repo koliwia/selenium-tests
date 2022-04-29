@@ -1,5 +1,6 @@
 # selenium-tests
 
+### Some of my projects using Selenium WebDriver & Python + my start off with Java :eyes:
 
 :small_orange_diamond: [CURA_Healthcare](https://github.com/koliwia/selenium-tests/tree/main/CURA_Healthcare) - my first ever functional test that contains the complete proccess of booking an appointment on [CURA Healthcare Service](https://katalon-demo-cura.herokuapp.com/).
 
