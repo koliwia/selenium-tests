@@ -42,10 +42,11 @@ price_values = [price.get_attribute('textContent') for price in prices]
 for price in price_values:
     print('The price is: ' + price)
 
-
 assert price_values[0] == '$22'
 assert price_values[1] == '$50'
 assert price_values[2] == '$80'
 assert price_values[3] == '$150'
+
+# assertions failed as something on the website has changed and it is showing all prices as 0
 
 driver.quit()
