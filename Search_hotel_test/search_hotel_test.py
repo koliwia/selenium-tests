@@ -13,7 +13,7 @@ driver.find_element(By.XPATH, '//*[@id="select2-drop"]/div/input').send_keys('Du
 wait = WebDriverWait(driver, 2)
 wait.until(EC.element_to_be_clickable((By.XPATH, '//span[text()="Dubai"]'))).click()
 driver.find_element(By.NAME, 'checkin').click()
-driver.find_element(By.XPATH, '//td[@class="day " and text()="14"]').click()
+driver.find_element(By.XPATH, '//td[@class="day " and text()="30"]').click()
 elements = driver.find_elements(By.XPATH, '//td[@class="day " and text()="19"]')
 for e in elements:
     if e.is_displayed():
