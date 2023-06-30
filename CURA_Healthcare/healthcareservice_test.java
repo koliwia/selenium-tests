@@ -48,11 +48,11 @@ public class healthcareservice_test
         visit_form.click();
 
 //Selecting a month
-        driver.findElement(By.xpath("//*/div[1]/table/thead/tr[2]/th[2]")).click();
-        driver.findElement(By.xpath("//*/div[2]/table/tbody/tr/td/span[2]")).click();
+        driver.findElement(By.xpath("//*/div[1]/*/*/tr[2]/th[2]")).click();
+        driver.findElement(By.xpath("//*/div[2]/*/*/*/*/span[2]")).click();
 
 //Selecting a day
-        driver.findElement(By.xpath("//*/div[1]/table/tbody/tr[2]/td[4]")).click();
+        driver.findElement(By.xpath("//*/div[1]/*/*/tr[2]/td[4]")).click();
 
 // Adding a comment
         driver.findElement(By.id("txt_comment")).sendKeys("ASAP");
