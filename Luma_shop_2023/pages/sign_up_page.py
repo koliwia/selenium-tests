@@ -50,9 +50,9 @@ class SignUpPage(BasePage):
         self.set_password(password)
         self.set_confirm_password(confirm_password)
 
-    def get_warning_messages(self):
-        return self.get_text(self.firstname_validation_message)
-        return self.get_text(self.lastname_validation_message)
-        return self.get_text(self.email_validation_message)
-        return self.get_text(self.password_validation_message)
-        return self.get_text(self.password_confirmation_validation_message)
+    def get_error_messages(self):
+        return [self.get_text(self.firstname_validation_message),
+                self.get_text(self.lastname_validation_message),
+                self.get_text(self.email_validation_message),
+                self.get_text(self.password_validation_message),
+                self.get_text(self.password_confirmation_validation_message)]

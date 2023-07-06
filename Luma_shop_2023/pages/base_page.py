@@ -15,13 +15,12 @@ class BasePage:
         self.find(*locator).clear()
         self.find(*locator).send_keys(value)
 
-    def get_text(self,locator):
+    def get_text(self, locator):
         return self.find(*locator).text
 
     def get_title(self):
         return self.driver.title
 
     def click_top_page_menu(self, page_name):
-        page = By.XPath, "//ul[@id ='ui-id-2']//span[text()='"+page_name+"']"
+        page = By.XPath, "//ul[@id ='ui-id-2']//span[text()='" + page_name + "']"
         self.click(page)
-
