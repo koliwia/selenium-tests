@@ -26,4 +26,3 @@ class LogInPage(BasePage):
         self.click(self.log_in_button)
         return MyAccountPage(self.driver)
 
-
