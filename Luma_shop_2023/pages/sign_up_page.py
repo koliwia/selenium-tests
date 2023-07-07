@@ -16,9 +16,13 @@ class SignUpPage(BasePage):
     email_validation_message = (By.ID, "email_address-error")
     password_validation_message = (By.ID, "password-error")
     password_confirmation_validation_message = (By.ID, "password-confirmation-error")
+    create_an_account_button_from_homepage = (By.LINK_TEXT, "Create an Account")
 
     def __init__(self, driver):
         super().__init__(driver)
+
+    def click_signup_page(self):
+        self.click(self.create_an_account_button_from_homepage)
 
     def set_first_name(self, first_name):
         self.set(self.first_name_field, first_name)

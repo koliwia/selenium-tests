@@ -1,3 +1,5 @@
+from webdriver_manager.core import driver
+
 from pages.sign_up_page import SignUpPage
 from tests.base_test import BaseTest
 from utilities.test_data import TestData
@@ -7,6 +9,7 @@ class TestSignUp(BaseTest):
 
     def test_valid_registration_data(self):
         signup_page = SignUpPage(self.driver)
+        signup_page.click_signup_page()
         signup_page.set_first_name(TestData.first_name)
         signup_page.set_last_name(TestData.last_name)
         signup_page.click_newsletter_tickbox()
@@ -20,6 +23,7 @@ class TestSignUp(BaseTest):
 
     def test_invalid_registration_data(self):
         signup_page = SignUpPage(self.driver)
+        signup_page.click_signup_page()
         signup_page.create_an_account(
             "","","invalidemail.com","abc","asd")
         signup_page.signup_button()

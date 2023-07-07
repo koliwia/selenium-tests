@@ -3,7 +3,9 @@ import self as self
 
 
 class TestData:
+    homepage_url = "https://magento.softwaretestingboard.com/"
     sign_up_url = "https://magento.softwaretestingboard.com/customer/account/create/"
+    log_in_url = "https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS8%2C/"
 
     # create random first name
     def create_first_name(self, length=6, chars=string.ascii_lowercase):
@@ -27,3 +29,7 @@ class TestData:
 
     password = "test123!"
     confirm_password = "test123!"
+
+
+    log_in_email = "hjmm@gfgr.com"
+    log_in_password = "test123!"

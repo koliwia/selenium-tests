@@ -8,7 +8,7 @@ def setup(request):
         driver = webdriver.Chrome()
     request.cls.driver = driver
     print("Browser: ", request.param)
-    driver.get(TestData.sign_up_url)
+    driver.get(TestData.homepage_url)
     driver.maximize_window()
     yield
     print("Close Driver")

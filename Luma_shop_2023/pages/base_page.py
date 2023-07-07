@@ -24,3 +24,4 @@ class BasePage:
     def click_top_page_menu(self, page_name):
         page = By.XPath, "//ul[@id ='ui-id-2']//span[text()='" + page_name + "']"
         self.click(page)
+
