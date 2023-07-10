@@ -9,6 +9,8 @@ class LogInPage(BasePage):
     password_field = (By.ID, "pass")
     log_in_button = (By.ID, "send2")
     sign_in_button_from_homepage = (By.LINK_TEXT, "Sign In")
+    arrow_to_account = (By.CSS_SELECTOR, "body > div.page-wrapper > header > div.panel.wrapper > div > ul > li.customer-welcome > span > button")
+    my_account_button =(By.LINK_TEXT,"My Account")
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -25,4 +27,8 @@ class LogInPage(BasePage):
     def click_log_in_button(self):
         self.click(self.log_in_button)
         return MyAccountPage(self.driver)
+
+    def go_back_to_your_account(self):
+        self.click(self.arrow_to_account)
+        self.click(self.my_account_button)
 
