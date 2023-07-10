@@ -1,7 +1,6 @@
 from selenium.common import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-from webdriver_manager.core import driver
 from selenium.webdriver.support import expected_conditions as EC
 from pages.log_in_page import LogInPage
 from tests.base_test import BaseTest
