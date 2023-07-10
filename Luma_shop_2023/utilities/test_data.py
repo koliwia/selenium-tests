@@ -21,7 +21,7 @@ class TestData:
 
     last_name = create_first_name(self)
 
-    # create random email
+    # create random email + invalid credentials
     def create_email(self, length=7, chars=string.ascii_lowercase):
         email_address = ''.join(random.choice(chars) for i in range(length))
         return email_address + "@email.com"
@@ -30,8 +30,4 @@ class TestData:
     password = "test123!"
     confirm_password = "test123!"
 
-    # valid/invalid log in credentials:
-    log_in_email = "hjmm@gfgr.com"
-    log_in_password = "test123!"
-    invalid_log_in_email = "adsfff@sdhhffa.com"
-    invalid_log_in_password = "invalid"
+
