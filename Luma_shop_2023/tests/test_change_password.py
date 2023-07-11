@@ -42,5 +42,6 @@ class TestChangePassword(BaseTest):
         except TimeoutException:
             print("Loading took too much time")
 
+        # Check if checkbox is selected
         checkbox = change_password_page.find_and_check_if_selected()
         assert checkbox.is_selected()
