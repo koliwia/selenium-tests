@@ -2,6 +2,7 @@ import pytest
 from selenium import webdriver
 from utilities.test_data import TestData
 
+
 @pytest.fixture(params=["chrome"])
 def setup(request):
     if request.param == "chrome":

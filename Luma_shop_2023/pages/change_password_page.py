@@ -1,4 +1,5 @@
 from pages.base_page import BasePage
+from utilities import locators
 from utilities.locators import ChangePasswordFields
 
 
@@ -17,3 +18,6 @@ class ChangePasswordPage(BasePage):
         self.set(self.locators.confirm_new_password_field, confirm_new_password)
         self.click(self.locators.save_button)
 
+    def find_and_check_if_selected(self):
+        #print(self.locators.change_password_checkbox)
+        return self.find(self.locators.change_password_checkbox)

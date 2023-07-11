@@ -31,5 +31,5 @@ class TestData:
     confirm_password = "test123!"
 
     # valid log in credentials:
-    log_in_email = "hjmm@gfgr.com"
+    log_in_email = "testhalo@dfsfs.com"
     log_in_password = "test123!"
